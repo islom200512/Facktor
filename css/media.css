@@ -1,0 +1,128 @@
+@media screen and (max-width:1200px) {
+    .navbar {
+        flex-direction: row !important;
+        height: 100px;
+    }
+    .nav {
+        flex-direction: row !important;
+    }
+    .nav-item {
+        flex-direction: row !important;
+        display: flex;
+    }
+    .icons {
+        margin-right: 10px;
+    }
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+    .circle_box {
+        margin-right: 10px;
+    }
+    .nav-tabs {
+        height: 100%;
+    }
+    .link2.active::before {
+        content: "";
+        width: 180px;
+        height: 3px;
+        background-color: #FF0202;
+        position: absolute;
+        bottom: 0 !important;
+        left: 0;
+        transition: all 0.4s 0.4s;
+    }
+    .link2::before {
+        content: "";
+        width: 0px;
+        height: 3px;
+        background-color: #FF0202;
+        position: absolute;
+        bottom: 0 !important;
+        left: 0;
+        transition: all 0.4s;
+    }
+    .link2:focus::before {
+        content: "";
+        width: 180px;
+        height: 3px;
+        background-color: #FF0202;
+        position: absolute;
+        bottom: 0 !important;
+        left: 0;
+    }
+    .link2.active::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        background-color: #FF0202;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.4s 0.4s;
+    }
+    .link2::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        background-color: #FF0202;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.4s;
+    }
+    .link2:focus::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        background-color: #FF0202;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .mainThree {
+        overflow: visible;
+        height: 100%;
+    }
+    .nav-tabs {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .mainThree_title {
+        text-align: center;
+    }
+    .mainThree_text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .mainThree {
+        padding: 30px;
+    }
+    .mainThree_flex_big_box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-tabs {}
+    .nav .flex-column {
+        display: none;
+    }
+    .mainFour_content_text {
+        text-align: center;
+    }
+    .mainFour_content_title {
+        text-align: center;
+    }
+}
+
+ul {
+    border-bottom: none !important;
+}
